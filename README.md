@@ -7,5 +7,7 @@ Gallery and preview from file or datadbase
 - easy style
 - source select (database or file)
 - multiple gallery on one page
-<iframe src = "http://atandrastoth.co.uk/gallery/" style = "width:100%;height:100%" ></iframe>
+ 
+Demo : http://atandrastoth.co.uk/gallery/
+
 Author: Tóth András
