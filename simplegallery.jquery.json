@@ -1,1 +1,36 @@
-simpletable.jquery.json
+{
+    "name": "simplegallery",
+    "title": "jQuery simplegallery",
+    "description": "jQuery plugin for picture viewing.",
+    "keywords": [
+        "picture",
+        "resize",
+        "preview",
+        "gallery"
+    ],
+    "version": "1.0.0",
+    "author": {
+        "name": "Tóth András",
+        "url": "https://github.com/andrastoth/image_viewer/master/AUTHORS.txt"
+    },
+    "maintainers": [
+        {
+            "name": "Tóth András",
+            "email": "atandrastoth@gmail.com",
+            "url": "http://atandrastoth.co.uk"
+        }
+    ],
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "https://github.com/andrastoth/image_viewer/master/MIT-LICENSE.txt"
+        }
+    ],
+    "bugs": "https://github.com/andrastoth/image_viewer/issues",
+    "homepage": "http://atandrastoth.co.uk/webdesign",
+    "docs": "https://github.com/andrastoth/gallery",
+    "download": "https://github.com/andrastoth/image_viewer/archive/master.zip",
+    "dependencies": {
+        "jquery": ">=1.7"
+    }
+}
