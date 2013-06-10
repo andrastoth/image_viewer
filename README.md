@@ -12,6 +12,3 @@ Demo : http://atandrastoth.co.uk/gallery/
 
 Author: Tóth András
 
-<div>
-<iframe src="http://atandrastoth.co.uk/gallery" style = "width:100%;"></iframe>
-</div>
