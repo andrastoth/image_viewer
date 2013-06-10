@@ -1,13 +1,12 @@
-
 <html>
   <head>
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  	<title></title>
+  	<title>simpleGallery</title>
   	<script src="js/jquery-1.9.0.js" type="text/javascript"></script>
-    <link type ="text/css" rel="stylesheet" href="css/simpleGallery.css" charset="utf-8" media="all">
+    <link type ="text/css" rel="stylesheet" href="css/simplegallery.css" charset="utf-8" media="all">
     <link type ="text/css" rel="stylesheet" href="css/codemirror.css" charset="utf-8" media="all">  
     <link type ="text/css" rel="stylesheet" href="css/monokai.css" charset="utf-8" media="all">     
-  	<script src="js/simpleGallery.js" type="text/javascript" charset="utf-8" ></script>
+  	<script src="js/simplegallery.js" type="text/javascript" charset="utf-8" ></script>
     <script src="js/codemirror.js" type="text/javascript" charset="utf-8" ></script>
     <script src="js/javascript.js" type="text/javascript" charset="utf-8" ></script>
 	</head>
