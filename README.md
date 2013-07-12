@@ -3,9 +3,9 @@ image_viewer jQuery-plugin
 
 Gallery and preview from file or datadbase
 
-<img src = "css/Capture.jpg">
+<img src = "css/Capture.JPG">
 
-<img src = "css/Capture1.jpg">
+<img src = "css/Capture1.JPG">
 
 - resize on fly
 - easy style
