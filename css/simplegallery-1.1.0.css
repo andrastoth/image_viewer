@@ -5,254 +5,264 @@
 }
 
 .scrollerHorizontal {
+    display: inline-block;
     margin: 0;
     overflow: hidden;
-    display: inline-block;
     white-space: nowrap;
 }
 
 .galleryHolder {
-    font-size: 1em;
     display: inline-block;
     float: none;
-    text-align: center;
-    position: relative;
-    padding: 5px;
+    font-size: 1em;
     margin: 10px;
     overflow-x: hidden;
     overflow-y: hidden;
-}
-.bgcol{
-     background-color: rgb(245, 245, 245);   
-}
-.insh{
-    -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 2px 2px inset;
-    -moz-box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 2px 2px inset;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 2px 2px inset;    
-}
-.outsh{
-    -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 2px 2px;
-    -moz-box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 2px 2px;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 2px 2px;
-}
-.brd{
-    border-color: #F16529;
-    border-width: 10px;
-    border-style: solid;  
-}
-.brdrad{
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    border-radius: 10px;
-}
-.galleryHolder .up {
-    cursor: pointer;
-    z-index: 1;
-    right: 0;
-    display: inline-block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    margin: auto;
-    opacity: 0.3;
-    filter: Alpha(Opacity=30);
+    padding: 5px;
+    position: relative;
+    text-align: center;
 }
 
-.galleryHolder .upHorizontal {
+.galleryHolder .previewHorizontal {
+    -moz-filter: sepia(70%);
+    -ms-filter: sepia(70%);
+    -o-filter: sepia(70%);
+    -webkit-filter: sepia(70%);
+    border: 5px solid rgb(255, 255, 255);
     cursor: pointer;
-    z-index: 1;
-    bottom: 0;
-    display: inline-block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 20%;
-    margin: auto;
-    opacity: 0.3;
-    filter: Alpha(Opacity=30);
+    float: none;
+    margin: 5px;
+    vertical-align: middle;
+}
+
+.galleryHolder .preview:hover,
+.galleryHolder .previewHorizontal:hover {
+    -moz-filter: sepia(0%);
+    -ms-filter: sepia(0%);
+    -o-filter: sepia(0%);
+    -webkit-filter: sepia(0%);
+    border-color: rgb(214, 214, 214) !important;
 }
 
 .galleryHolder .downHorizontal {
-    cursor: pointer;
-    z-index: 1;
     bottom: 0;
+    cursor: pointer;
     display: inline-block;
-    position: absolute;
-    top: 0;
-    right: 0;
+    filter: Alpha(Opacity=30);
     height: 20%;
     margin: auto;
     opacity: 0.3;
-    filter: Alpha(Opacity=30);
-}
-.galleryHolder .down {
-    cursor: pointer;
-    z-index: 1;
-    bottom: 0;
-    right: 0;
-    display: inline-block;
     position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.galleryHolder .down:active,
+.galleryHolder .downHorizontal:active {
+    filter: Alpha(Opacity=100);
+    opacity: 1;
+}
+
+.galleryHolder .down:hover,
+.galleryHolder .downHorizontal:hover {
+    filter: Alpha(Opacity=100);
+    opacity: 1;
+}
+
+.galleryHolder .upHorizontal {
+    bottom: 0;
+    cursor: pointer;
+    display: inline-block;
+    filter: Alpha(Opacity=30);
+    height: 20%;
     left: 0;
-    width: 100%;
     margin: auto;
     opacity: 0.3;
-    filter: Alpha(Opacity=30);
+    position: absolute;
+    top: 0;
+    z-index: 1;
 }
 
-.galleryHolder .down:hover, .galleryHolder .downHorizontal:hover {
+.galleryHolder .up:active,
+.galleryHolder .upHorizontal:active {
     filter: Alpha(Opacity=100);
     opacity: 1;
 }
 
-.galleryHolder .up:hover, .galleryHolder .upHorizontal:hover {
-    filter: Alpha(Opacity=100);
-    opacity: 1;
-}
-
-.galleryHolder .down:active, .galleryHolder .downHorizontal:active {
-    filter: Alpha(Opacity=100);
-    opacity: 1;
-}
-
-.galleryHolder .up:active, .galleryHolder .upHorizontal:active {
+.galleryHolder .up:hover,
+.galleryHolder .upHorizontal:hover {
     filter: Alpha(Opacity=100);
     opacity: 1;
 }
 
 .galleryHolder .preview {
-    
+    -moz-filter: sepia(70%);
+    -ms-filter: sepia(70%);
+    -o-filter: sepia(70%);
+    -webkit-filter: sepia(70%);
     border: 5px solid rgb(255, 255, 255);
     cursor: pointer;
-    margin: 5px;
     float: none;
-    -webkit-filter: sepia(70%);
-    -moz-filter: sepia(70%);
-    -o-filter: sepia(70%);
-    -ms-filter: sepia(70%);
+    margin: 5px;
 }
 
-.galleryHolder .previewHorizontal {
-    vertical-align: middle;
-    border: 5px solid rgb(255, 255, 255);
+.galleryHolder .down {
+    bottom: 0;
     cursor: pointer;
-    margin: 5px;
-    float: none;
-    -webkit-filter: sepia(70%);
-    -moz-filter: sepia(70%);
-    -o-filter: sepia(70%);
-    -ms-filter: sepia(70%);
+    display: inline-block;
+    filter: Alpha(Opacity=30);
+    left: 0;
+    margin: auto;
+    opacity: 0.3;
+    position: absolute;
+    right: 0;
+    width: 100%;
+    z-index: 1;
 }
 
-.galleryHolder .preview:hover, .galleryHolder .previewHorizontal:hover {
-    -webkit-filter: sepia(0%);
-    -moz-filter: sepia(0%);
-    -o-filter: sepia(0%);
-    -ms-filter: sepia(0%);
-    border-color: rgb(214, 214, 214) !important;
+.galleryHolder .up {
+    cursor: pointer;
+    display: inline-block;
+    filter: Alpha(Opacity=30);
+    left: 0;
+    margin: auto;
+    opacity: 0.3;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.bgcol { background-color: rgb(245, 245, 245) }
+
+.insh {
+    -moz-box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 2px 2px inset;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 2px 2px inset;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 2px 2px inset;
+}
+
+.outsh {
+    -moz-box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 2px 2px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 2px 2px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 2px 2px;
+}
+
+.brd {
+    border-color: #F16529;
+    border-style: solid;
+    border-width: 10px;
+}
+
+.brdrad {
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
 }
 
 .picholder {
-    z-index: 9999;
-    width: 90%;
     height: 90%;
-    top: 5%;
     left: 5%;
     position: absolute;
+    top: 5%;
+    width: 90%;
+    z-index: 9999;
 }
 
 .picdiv {
-    z-index: 0;
-    opacity: 1;
-    filter: Alpha(Opacity=100);
-    left: 10px;
-    top: 10px;
-    bottom: 40px;
-    right: 10px;
-    position: absolute;
     background: url(img/loader.gif) no-repeat center center;
     background-color: beige;
+    bottom: 40px;
+    filter: Alpha(Opacity=100);
+    left: 10px;
+    opacity: 1;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 0;
 }
 
 .picInfo {
-    font-family:  tahoma, Helvetica, Arial, sans-serif;
-    padding: 5px;
+    bottom: 0;
+    font-family: tahoma, Helvetica, Arial, sans-serif;
     font-size: 0.7em;
     font-weight: bold;
+    padding: 5px;
+    position: absolute;
     text-align: center;
     width: 100%;
-    bottom: 0;
-    position: absolute;
 }
 
 .moveleft {
-    width: auto;
-    text-align: right;
-    font-family:  tahoma, Helvetica, Arial, sans-serif;
-    padding: 10px;
-    z-index: 1;
-    cursor: pointer;
-    color: white;
-    -webkit-border-radius: 0px 10px 10px 0px;
     -moz-border-radius: 0px 10px 10px 0px;
-    border-radius: 0px 10px 10px 0px;
-    position: absolute;
-    top: 80px;
-    left: 10px;
+    -webkit-border-radius: 0px 10px 10px 0px;
     background-color: black;
-    opacity: 0.3;
+    border-radius: 0px 10px 10px 0px;
+    color: white;
+    cursor: pointer;
     filter: Alpha(Opacity=30);
+    font-family: tahoma, Helvetica, Arial, sans-serif;
+    left: 10px;
+    opacity: 0.3;
+    padding: 10px;
+    position: absolute;
+    text-align: right;
+    top: 80px;
+    width: auto;
+    z-index: 1;
 }
 
 .moveright {
-    text-align: left;
-    width: auto;
-    font-family:  tahoma, Helvetica, Arial, sans-serif;
-    padding: 10px;
-    z-index: 1;
-    cursor: pointer;
-    color: white;
-    -webkit-border-radius: 10px 0px 0px,10px;
     -moz-border-radius: 10px 0px 0px 10px;
-    border-radius: 10px 0px 0px 10px;
-    position: absolute;
-    top: 80px;
-    right: 10px;
+    -webkit-border-radius: 10px 0px 0px,10px;
     background-color: black;
-    opacity: 0.3;
+    border-radius: 10px 0px 0px 10px;
+    color: white;
+    cursor: pointer;
     filter: Alpha(Opacity=30);
-}
-
-.moveright,.moveleft {
+    font-family: tahoma, Helvetica, Arial, sans-serif;
+    opacity: 0.3;
+    padding: 10px;
     position: absolute;
-    font-size: 1.3em;
+    right: 10px;
+    text-align: left;
+    top: 80px;
+    width: auto;
+    z-index: 1;
 }
 
-.moveright:hover,.moveleft:hover {
-    opacity: 0.6;
+.moveright:hover,
+.moveleft:hover {
     filter: Alpha(Opacity=60);
+    opacity: 0.6;
 }
 
-#picdiv img {
-    filter: Alpha(Opacity=0);
+.moveright,
+.moveleft {
+    font-size: 1.3em;
+    position: absolute;
 }
+
+#picdiv img { filter: Alpha(Opacity=0) }
 
 .close {
-    right: 0;
-    top: 0;
-    z-index: 1;
     cursor: pointer;
     float: right;
     position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
 }
-#overlay{
+
+#overlay {
+    background-color: black;
     display: none;
+    filter: Alpha(Opacity=70);
+    left: 0;
+    opacity: 0.7;
     position: absolute;
     top: 0;
-    left: 0;
-    background-color: black;
     width: 100%;
     z-index: 999;
-    opacity: 0.7;
-    filter: Alpha(Opacity=70);
 }
